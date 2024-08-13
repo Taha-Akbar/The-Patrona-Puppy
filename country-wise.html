@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Patrona Puppy | Home-Page</title>
+    <link rel="icon" type="image/png" href="Assets/IMG/Favicon/favcion-3.png">
+    <!-- css start here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- css end here -->
+    <!-- js start here -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- js end here -->
+    <link rel="stylesheet" href="Assets/CSS/type-wise.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .container {
+        display: none;
+    }
+
+    .button {
+        margin: 2px;
+        border-radius: 20px;
+        background-color: #ffc400;
+        color: rgb(34, 39, 67);
+        border: none;
+        padding: 10px 20px 10px 20px;
+    }
+</style>
+
+<body onload="document.body.classList.add('loaded')">
+    <!-- navbar strat here -->
+    <nav class="navbar navbar-expand-lg navbar-dark  w-100 p-md-3" style="z-index: 100; position: absolute;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="Assets/IMG/logo/1-removebg-preview.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="puppy-care.html" class="nav-link">Puppy Care</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="" role="button" data-toggle="dropdown"
+                            aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="breed-page-1.html">Dog Breeds</a>
+                            <a class="dropdown-item" href="country-wise.html">Country Wise</a>
+                            <a class="dropdown-item" href="type-wise.html">Type Wise</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end here -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/IMG/country-wise/header/header-pic.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <p class="h3 font-weight-bold slider-caption-heading">"Tails Around the Globe: Dogs of the World"
+                    </p>
+                    <p class="h6 slider-caption ">Discover the Diverse Canine Cultures from Across the Globe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main content start here -->
+    <div class="container1">
+        <div class="row justify-content-center mt-5 mb-5">
+            <button class="button active" id="all">ALL</button>
+            <button class="button" id="button1">United State</button>
+            <button class="button" id="button2">Italy</button>
+            <button class="button" id="button3">Germany</button>
+            <button class="button" id="button4">Canada</button>
+        </div>
+    </div>
+    <div class="container" id="united">
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">American Eskimo Dog</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/2.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">American Bulldog</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/3.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boston Terrier</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">American Foxhound</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/5.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Alaskan Malamute</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toy Fox Terrier</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/7.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boykin Spaniel</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/8.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Australian Shepherd</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/united-state/9.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rottweiler</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="italy">
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Greyhound</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/2.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lagotto Romagnolo</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/3.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolognese dog</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cane Corso</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/5.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maremmano-Abruzzese Sheepdog</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Neapolitan Mastiff</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/7.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volpino</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/8.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Maltese dog</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Italy/9.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Shepherd</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="germany">
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">German Shepherd</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/2.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pomeranian</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/3.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Great Dane</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boxer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/5.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pudelpointer</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hovawart</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/7.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Keeshond</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/8.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">White Shepherd</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Germany/9.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Harlequin Pinscher</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="canada">
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Labrador Husky</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/2.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salish Wool Dog</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/3.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Karelian Bear Dog</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vizsla</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/5.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wirehaired Pointing Griffon</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/6.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Labrador Retriever</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/7.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mackenzie River husky</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/8.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Seppala siberian sleddog</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Assets/IMG/country-wise/main-content/Canada/9.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Landseer</h5>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- main content end here -->
+    <!-- footer start here  -->
+    <div class="container-lg-2 footer p-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 footer-icon">
+                <p class="h3 text-white">About Patrona Puppy</p>
+                <p class="about-us">This is website of a veteran want to share about all dogs she has met and research
+                    on.
+                    This is also a location for person love dogs and has desire to explore more about this creature.</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/twitt_login?lang=en" class="icon-1"><i
+                            class="fa-brands fa-twitter p-2"></i></a>
+                    <a href="https://www.facebook.com/" class="icon-2"><i class="fa-brands fa-facebook p-2"></i></a>
+                    <a href="https://pk.linkedin.com/" class="icon-3"><i class="fa-brands fa-linkedin p-2"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="icon-4"><i
+                            class="fa-brands fa-instagram p-2"></i></a>
+                    <!-- Add more social icons as needed -->
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white">Contact Info</h3>
+                <ul class="list-unstyled footer-link">
+                    <li class="d-block">
+                        <span class="d-block contact">Address:</span>
+                        <span class="text-white">10749 NW Ambassador Drive
+                            Kansas City, MO 64153 USA</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Telephone:</span><span class="text-white">+1 6500
+                            4242</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Email:</span><span
+                            class="text-white">info@patrona.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-5">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="list-unstyled footer-link footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="mt-2"><a href="breed.html">Dog Breeds</a></li>
+                    <li class="mt-2"><a href="puppy-care.html">Puppy Care</a></li>
+                    <li class="mt-2"><a href="faq.html">FAQ</a></li>
+                    <li class="mt-2"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="h6 text-white text-center">Copyright © 2024 All rights reserved | This website is made by The
+                    Patrona Puppy</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end here -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Assets/JS/script.js"></script>
+
+</html>

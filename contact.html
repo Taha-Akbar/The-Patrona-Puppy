@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Patrona Puppy | Contact-Page</title>
+    <link rel="icon" type="image/png" href="Assets/IMG/Favicon/favcion-3.png">
+    <!-- css start here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- css end here -->
+    <!-- js start here -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- js end here -->
+    <link rel="stylesheet" href="Assets/CSS/home.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    i {
+        color: #ffc400;
+    }
+</style>
+
+<body onload="document.body.classList.add('loaded')">
+    <!-- navbar strat here -->
+    <nav class="navbar navbar-expand-lg navbar-dark  w-100 p-md-3" style="z-index: 100; position: absolute;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="Assets/IMG/logo/1-removebg-preview.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Puppy Care</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="" role="button" data-toggle="dropdown"
+                            aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="breed-page-1.html">Dog Breeds</a>
+                            <a class="dropdown-item" href="country-wise.html">Country Wise</a>
+                            <a class="dropdown-item" href="type-wise.html">Type Wise</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end here -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/IMG/contact/contact-page-slider/2.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <p class="h3 font-weight-bold slider-caption-heading">More than just a website.</p>
+                    <p class="h6 slider-caption ">Let make something awesome together. Stop by and say "Hi".
+                        Or drop us a note
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main content start here -->
+
+    <section class="section">
+        <div class="container contact">
+            <div class="row">
+                <div class="col-md-6 mb-7  contact_us">
+                    <form action="index.html" method="post">
+                        <h2 class="m-md-3 p-2 text-dark font-weight-bold  d-inline-block">What's on Your Mind?</h2>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" required="name">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="phone">Phone</label>
+                                <input type="number" id="phone" class="form-control" required="phone number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="message">Write Message</label>
+                                <textarea name="message" id="message" class="form-control " cols="30" rows="5"
+                                    required="text"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="text-align: center;">
+                            <div class="col-md-12 form-group">
+                                <input type="submit" value="Send Message"
+                                    style="padding: 10px; background-color: #ffc400; border: none; border-radius: 5px ; color: rgb(34, 39, 67);">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 mb-5 find_us">
+                    <h2 style="margin-bottom: 1em;" class="m-md-3 p-2 text-dark  font-weight-bold d-inline-block">Find
+                        us</h2>
+                    <div class="row">
+                        <div class="map col-md-12">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.9550122098667!2d-94.67863734852891!3d39.289270779411524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c05e8d534522bb%3A0xd94075cd7a13194c!2s10749%20N%20Ambassador%20Dr%2C%20Kansas%20City%2C%20MO%2064153%2C%20USA!5e0!3m2!1sen!2s!4v1594739010200!5m2!1sen!2s"
+                                width="450" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="map col-md-12 justify-content-right mt-5">
+
+                            <div class="contact-form-contact-info">
+                                <p class="d-flex">
+                                    <span class="  mr-5"><i class="fa-solid fa-location-dot"></i></span>
+                                    <span>10749 NW Ambassador Drive
+                                        Kansas City, MO 64153 USA</span>
+                                </p>
+
+                                <p class="d-flex">
+                                    <span class="icon mr-5"><i class="fa-solid fa-phone"></i></span>
+                                    <span>+1 6500 4242</span>
+                                </p>
+
+                                <p class="d-flex">
+                                    <span class="icon mr-5"><i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <span>info@patrona.com</span>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- main content end here -->
+    <!-- footer start here  -->
+    <div class="container-lg-2 footer p-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 footer-icon">
+                <p class="h3 text-white">About Patrona Puppy</p>
+                <p class="about-us">This is website of a veteran want to share about all dogs she has met and research
+                    on.
+                    This is also a location for person love dogs and has desire to explore more about this creature.</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/twitt_login?lang=en" class="icon-1"><i
+                            class="fa-brands fa-twitter p-2"></i></a>
+                    <a href="https://www.facebook.com/" class="icon-2"><i class="fa-brands fa-facebook p-2"></i></a>
+                    <a href="https://pk.linkedin.com/" class="icon-3"><i class="fa-brands fa-linkedin p-2"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="icon-4"><i
+                            class="fa-brands fa-instagram p-2"></i></a>
+                    <!-- Add more social icons as needed -->
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white">Contact Info</h3>
+                <ul class="list-unstyled footer-link">
+                    <li class="d-block">
+                        <span class="d-block contact">Address:</span>
+                        <span class="text-white">10749 NW Ambassador Drive
+                            Kansas City, MO 64153 USA</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Telephone:</span><span class="text-white">+1 6500
+                            4242</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Email:</span><span
+                            class="text-white">info@patrona.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-5">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="list-unstyled footer-link footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="mt-2"><a href="breed.html">Dog Breeds</a></li>
+                    <li class="mt-2"><a href="puppy-care.html">Puppy Care</a></li>
+                    <li class="mt-2"><a href="faq.html">FAQ</a></li>
+                    <li class="mt-2"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="h6 text-white text-center">Copyright © 2024 All rights reserved | This website is made by The
+                    Patrona Puppy</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end here -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Assets/JS/script.js"></script>
+
+</html>

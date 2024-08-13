@@ -1,0 +1,21 @@
+.slider-caption-heading-1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.btn {
+    font: weight 400px;
+    font-size: 15px;
+    color: white;
+    line-height: 0.7;
+    height: 20px;
+}
+
+.card {
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgb(34, 39, 67);
+}
+
+.card-body {
+    background-color: rgb(250, 250, 250);
+}

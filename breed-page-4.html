@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Patrona Puppy | Dogs-Breeds-Page</title>
+    <link rel="icon" type="image/png" href="Assets/IMG/Favicon/favcion-3.png">
+    <!-- css start here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- css end here -->
+    <!-- js start here -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- js end here -->
+    <link rel="stylesheet" href="Assets/CSS/breed.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body onload="document.body.classList.add('loaded')">
+    <!-- navbar strat here -->
+    <nav class="navbar navbar-expand-lg navbar-dark  w-100 p-md-3" style="z-index: 100; position: absolute;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="Assets/IMG/logo/1-removebg-preview.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="puppy-care.html" class="nav-link">Puppy Care</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="" role="button" data-toggle="dropdown"
+                            aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="breed-page-1.html">Dog Breeds</a>
+                            <a class="dropdown-item" href="country-wise.html">Country Wise</a>
+                            <a class="dropdown-item" href="type-wise.html">Type Wise</a>
+                        </div>
+                    </li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end here -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/IMG/dogs-breeds/carousel/3.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <p class="h3 font-weight-bold slider-caption-heading">A library of Dog Breeds</p>
+                    <p class="h6 slider-caption "> How to know more about your four leg friend? How to know more dog
+                        breeds? <br>
+
+                        Good new, we have a big library hear!For each breed you can find out more about their
+                        history <br>
+                        and personality, location, etc. From giant dog breeds that offer plenty more pup to love to
+                        adorable <br>
+                        toy
+                        types, our extensive dog breed library covers various types and categories. Let's explore
+                        together!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main content start here -->
+    <div class="container mt-4">
+        <!-- Filter Bar -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="">
+                    <div class="card-body">
+                        <h6 class="card-title mb-0"
+                            style="background-color:  #ffc400; padding: 10px; color: rgb(34, 39, 67);">Filters
+                        </h6>
+                        <form id="filterForm">
+                            <div class="form-group">
+                                <h6 class="mb-0"
+                                    style="background-color: rgb(224, 228, 234); padding: 9px; color: brown;">Size</h6>
+                                <br>
+                                <input type="checkbox" id="size" value="small"> Small<br>
+                                <input type="checkbox" id="size" value="medium"> Medium<br>
+                                <input type="checkbox" id="size" value="large"> Large<br>
+                            </div>
+                            <div class="form-group">
+                                <h6 class="mb-0"
+                                    style="background-color: rgb(224, 228, 234); padding: 9px; color: brown;">Character:
+                                </h6><br>
+                                <input type="checkbox" id="character" value="friendly"> Friendly<br>
+                                <input type="checkbox" id="character" value="playful"> Playful<br>
+                                <input type="checkbox" id="character" value="loyal"> Loyal<br>
+                            </div>
+                            <div class="form-group">
+                                <h6 class="mb-0"
+                                    style="background-color: rgb(224, 228, 234); padding: 9px; color: brown;">Color</h6>
+                                <br>
+                                <input type="checkbox" id="color" value="brown"> Brown<br>
+                                <input type="checkbox" id="color" value="black"> Black<br>
+                                <input type="checkbox" id="color" value="white"> White<br>
+                            </div>
+                            <div class="form-group">
+                                <h6 class="mb-0"
+                                    style="background-color: rgb(224, 228, 234); padding: 9px; color: brown;">Geography
+                                </h6><br>
+                                <input type="checkbox" id="geography" value="asia"> Asia<br>
+                                <input type="checkbox" id="geography" value="europe"> Europe<br>
+                                <input type="checkbox" id="geography" value="america"> America<br>
+                            </div>
+                            <button type="submit" class="btn "
+                                style="padding: 10px; background-color: #ffc400; border: none; border-radius: 5px ; color: rgb(34, 39, 67);">Apply
+                                Filters</button>
+                            <button type="reset" class="btn"
+                                style="background-color: rgb(10, 177, 10); color: white;">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Dog Cards -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Example dog card (repeat this structure for each dog) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/FinnishSpitz-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Finnish Spitz</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#Finnish-Spitz">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/Whippet-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Whippet</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal" data-target="#Whippet">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/Basenji-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">ABasenji</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal" data-target="#ABasenji">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat this dog card structure for each breed -->
+                </div>
+                <div class="row">
+                    <!-- Example dog card (repeat this structure for each dog) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/ThaiRidgeback-4.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Thai Ridgeback</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#Thai-Ridgeback">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/Rottweiler-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Rottweiler</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#Rottweiler">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/Boxer-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Boxer</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal" data-target="#Boxer">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat this dog card structure for each breed -->
+                </div>
+                <div class="row">
+                    <!-- Example dog card (repeat this structure for each dog) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/MiniatureSchnauzer-7.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Miniature Schnauzer</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#Miniature-Schnauzer">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/AmericanStaffordshireTerrier-8.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">American Staffordshire Terrier</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#American-Staffordshire-Terrier">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card ">
+                            <img src="Assets/IMG/dogs-breeds/dog-img/AiredaleTerrier-9.jpg" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title">Airedale Terrier</h6>
+
+                                <button type="button" class="modal-button" data-toggle="modal"
+                                    data-target="#Airedale-Terrier">
+                                    View Dog Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat this dog card structure for each breed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Finnish-Spitz" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong> Finland</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Others</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong> Non Sporting (AKC:1988), Northern Breeds (UKC)</p>
+                    <p><strong>Height:</strong> 15-20 inches (38-51 cm)</p>
+                    <p><strong>Weight:</strong> 31-35 pounds (14-16 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Whippet" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong> United Kingdom</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Black</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong> Hound (AKC:1888), Sighthound & Pariah (UKC)</p>
+                    <p><strong>Height:</strong> 19 - 22 inches (47 - 56 cm)</p>
+                    <p><strong>Weight:</strong> 25 - 45 pounds (11 - 21 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="ABasenji" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong> Congo</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Others</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong> Hound (AKC:1943), Sighthounds and Pariahs (UKC)</p>
+                    <p><strong>Height:</strong>16-17 inches (41-43 cm)</p>
+                    <p><strong>Weight:</strong> 22-26 pounds (10-12 kg)</p>
+                    <p><strong>Geography:</strong> Asia</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Thai-Ridgeback" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong>Thailand</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Black</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong> Hound, Sighthound & Pariah (UKC)</p>
+                    <p><strong>Height:</strong> 22-24 inches (56-60 cm)</p>
+                    <p><strong>Weight:</strong>51-75 pounds (23-34 kg)</p>
+                    <p><strong>Geography:</strong> Asia</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="Rottweiler" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong>Germany</p>
+                    <p><strong>Size:</strong> Large</p>
+                    <p><strong>Color:</strong> Black</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Working (AKC:1931), Guardian Dogs (UKC)</p>
+                    <p><strong>Height:</strong> 24-27 inches (61-69 cm)</p>
+                    <p><strong>Weight:</strong>95-130 pounds (43-59 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="Rottweiler" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong>Germany</p>
+                    <p><strong>Size:</strong> Large</p>
+                    <p><strong>Color:</strong> Black</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Working (AKC:1931), Guardian Dogs (UKC)</p>
+                    <p><strong>Height:</strong> 24-27 inches (61-69 cm)</p>
+                    <p><strong>Weight:</strong>95-130 pounds (43-59 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="Boxer" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong>Germany</p>
+                    <p><strong>Size:</strong> Small</p>
+                    <p><strong>Color:</strong>Others</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Working (AKC:1904), Guardian Dogs (UKC)</p>
+                    <p><strong>Height:</strong>22-25 inches (56-63 cm)</p>
+                    <p><strong>Weight:</strong>60-70 pounds (27-32 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div> card-hover
+    </div>
+
+    <div class="modal fade" id="Miniature-Schnauzer" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong>Germany</p>
+                    <p><strong>Size:</strong> Small</p>
+                    <p><strong>Color:</strong>Black</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Terrier (AKC:1926)(UKC)</p>
+                    <p><strong>Height:</strong>14 inches (35.6 cm)</p>
+                    <p><strong>Weight:</strong>11-18 pounds (5.0-8.2 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="American-Staffordshire-Terrier" tabindex="-1" role="dialog"
+        aria-labelledby="dogModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong> United States</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Others</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Terrier (AKC:1936)</p>
+                    <p><strong>Height:</strong>17-19 inches (43-48 cm)</p>
+                    <p><strong>Weight:</strong>57-67 pounds (25-30 kg)</p>
+                    <p><strong>Geography:</strong> North America</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Airedale-Terrier" tabindex="-1" role="dialog" aria-labelledby="dogModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="dogModalLabel">Dog Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Origin:</strong> United Kingdom</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Color:</strong> Others</p>
+                    <p><strong>Type:</strong> Purebred</p>
+                    <p><strong>Breed Group:</strong>Terrier (AKC:1888 & UKC)</p>
+                    <p><strong>Height:</strong>22-24 inches (56-61 cm)</p>
+                    <p><strong>Weight:</strong>50-65 pounds (23-29 kg)</p>
+                    <p><strong>Geography:</strong> Europe</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modail-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Pagination container -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination custom-pagination">
+                            <li class="page-item"><a class="page-link" href="breed-page-3.html">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="breed-page-1.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="breed-page-2.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="breed-page-3.html">3</a></li>
+                            <li class="page-item"><a class="page-link" href="breed-page-4.html">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- main content end here -->
+    <!-- footer start here  -->
+    <div class="container-lg-2 footer p-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 footer-icon">
+                <p class="h3 text-white">About Patrona Puppy</p>
+                <p class="about-us">This is website of a veteran want to share about all dogs she has met and research
+                    on.
+                    This is also a location for person love dogs and has desire to explore more about this creature.</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/twitt_login?lang=en" class="icon-1"><i
+                            class="fa-brands fa-twitter p-2"></i></a>
+                    <a href="https://www.facebook.com/" class="icon-2"><i class="fa-brands fa-facebook p-2"></i></a>
+                    <a href="https://pk.linkedin.com/" class="icon-3"><i class="fa-brands fa-linkedin p-2"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" class="icon-4"><i
+                            class="fa-brands fa-instagram p-2"></i></a>
+                    <!-- Add more social icons as needed -->
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white">Contact Info</h3>
+                <ul class="list-unstyled footer-link">
+                    <li class="d-block">
+                        <span class="d-block contact">Address:</span>
+                        <span class="text-white">10749 NW Ambassador Drive
+                            Kansas City, MO 64153 USA</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Telephone:</span><span class="text-white">+1 6500
+                            4242</span>
+                    </li>
+                    <li class="d-block"><span class="d-block contact">Email:</span><span
+                            class="text-white">info@patrona.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-5">
+                <h3 class="text-white">Quick Links</h3>
+                <ul class="list-unstyled footer-link footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="mt-2"><a href="breed.html">Dog Breeds</a></li>
+                    <li class="mt-2"><a href="puppy-care.html">Puppy Care</a></li>
+                    <li class="mt-2"><a href="faq.html">FAQ</a></li>
+                    <li class="mt-2"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <p class="h6 text-white text-center">Copyright © 2024 All rights reserved | This website is made by The
+                    Patrona Puppy</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end here -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Assets/JS/script.js"></script>
+
+</html>

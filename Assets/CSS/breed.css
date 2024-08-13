@@ -1,0 +1,62 @@
+.modal-button {
+    color: #ffc400;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    padding: 0px;
+}
+
+.card-body {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+/* @media only screen and (max-width: 300px) {
+    .card-hover:hover {
+        transform: scale(0);
+    }
+} */
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    background-color: rgb(34, 39, 67);
+    color: #ffc400;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: none;
+}
+
+.modal-footer button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
